@@ -1,0 +1,14 @@
+<div class="post-wrap" *ngFor="let bloglist of bloglists">
+<div class="post-preview" >
+  <a  routerLink="/blog">
+      <h2 class="post-title">
+         {{bloglist.headTitle}}
+      </h2>
+      <h3 class="post-subtitle">
+          {{bloglist.headSubtitle}}
+      </h3>
+  </a>
+  <p class="post-meta">Posted by <a href="#">{{bloglist.postBy}}</a> on {{bloglist.postdate}}</p>
+</div>
+<hr>
+</div>
